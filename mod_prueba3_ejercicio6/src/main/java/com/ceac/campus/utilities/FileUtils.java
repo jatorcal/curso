@@ -28,7 +28,7 @@ public class FileUtils {
 	public List<Producto> leerFichero() throws URISyntaxException, NumberFormatException, IOException {
 
 		String cadena = "";
-		List<Producto> listProduct = new ArrayList<>();
+		List<Producto> listProduct = new ArrayList<Producto>();
 		FileReader f = new FileReader(getProductListFile());
 		BufferedReader b = new BufferedReader(f);
 		while ((cadena = b.readLine()) != null) {
